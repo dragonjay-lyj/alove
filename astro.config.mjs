@@ -1,27 +1,55 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import tailwind from "@astrojs/tailwind";
+import react from '@astrojs/react';
+import starlightImageZoom from 'starlight-image-zoom'
+import starlightUtils from "@lorenzo_lewis/starlight-utils";
+
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
-	],
+  site: 'https://fundoshi.dragonjay.top',
+  integrations: [react(), starlight({
+    plugins: [starlightImageZoom(),starlightUtils({
+      multiSidebar: {
+        switcherStyle: "horizontalList",
+      },
+    }),],
+    title: {
+      'zh-CN': '紧缚',
+      en: 'BDSM'
+    },
+    defaultLocale: 'root',
+    locales: {
+      root: {
+        label: '简体中文',
+        lang: 'zh-CN' // lang 是 root 语言必须的
+      },
+      'en': {
+        label: 'English',
+        lang: 'en'
+      }
+    },
+    customCss: [
+    // 你的 Tailwind 基础样式的相对路径
+    './src/tailwind.css'],
+    social: {
+      github: 'https://github.com/withastro/starlight'
+    },
+    sidebar: [{
+      label: '褌',
+      items: [
+      // Each item here is one entry in the navigation menu.
+      {
+        label: '六尺道场',
+        autogenerate: {
+          directory: 'constellations'
+        }
+      }]
+    }]
+  }), tailwind(tailwind({
+    // 禁用默认的基础样式
+    applyBaseStyles: false
+  })), icon()]
 });
