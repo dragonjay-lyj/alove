@@ -6,7 +6,8 @@ description: Get started building your docs site with Starlight.
 import { ShowcaseImage } from 'starlight-showcases'
 import { ShowcaseQuote } from 'starlight-showcases'
 import { ShowcaseYouTube } from 'starlight-showcases'
-import { Image } from 'astro:assets'
+import {Image} from "@nextui-org/image";
+import { Aside } from '@astrojs/starlight/components';
 
 <ShowcaseImage
   entries={[
@@ -20,23 +21,23 @@ import { Image } from 'astro:assets'
 />
 
 <ShowcaseQuote
+className="relative w-[85%] p-[2.5%] rounded-[5px] border-[3px] border-solid"
   entries={[
     {
-      quote: '我丈夫要参加祭典，听说要穿“ フンドシ ”。请问“ フンドシ ”要怎么穿呢？',
+      quote: '我丈夫要参加祭祀活动，需要穿着传统的褌。 请问褌应该如何穿着呢？',
       author: '初学者',
       href: 'https://matsurijuku.com/rokushakufundoshi/',
     },
     {
-      quote: '在日本，人们参加祭典抬神轿时，经常会穿着一种名为“ 締め込み ”的传统紧身装束，而“ 六尺褌（ろくしゃくふんどし） ”则是这种装束的必备单品。今天就来为大家介绍一下“ 六尺褌 ”的正确穿法。',
+      quote: '在日本，参加祭祀活动时，人们通常会穿着传统服饰，其中一种经典的穿着方式叫做“締め込みスタイル”，也就是我们常说的“褌造型”。 而“六尺褌” (ろくしゃくふんどし) 则是这种造型中不可或缺的服饰。 今天，我们就来学习一下如何正确穿着六尺褌。',
       author: 'おしんちゃん 奥信酱',
       href: 'https://matsurijuku.com/rokushakufundoshi/',
     },
   ]}
 />
 
-在日本，参加祭典时有一种经典的服装造型叫做“ 締め込み ”，而“ 六尺褌（ろくしゃくふんどし） ”则是这种造型中必不可少的服饰单品。为了让大家都能轻松掌握“ 六尺褌 ”的穿法，我们特意准备了详细的图文和视频教程。 “ 六尺褌 ”的穿法比较独特， 想要穿得得体美观需要多多练习，才能在祭典当天展现出您的风采。
-
 <ShowcaseYouTube
+className="relative w-[85%] p-[2.5%] rounded-[5px] border-[3px] border-solid"
   entries={[
     {
       href: 'https://www.youtube.com/watch?v=eipUT77HhAU',
@@ -46,14 +47,92 @@ import { Image } from 'astro:assets'
 />
 
 <details>
-<summary>穿“ 六尺褌 ”时需要准备的物品</summary>
+<summary class="shadow-[0_1px_5px_rgba(0,0,0,0.03)] relative text-[1.25em] px-[1.1em] rounded-[3px] border-[none]">穿六尺褌需要准备的物品</summary>
 
-请准备一块幅宽约30cm的棉质“ 晒 ”反物面料。建议长度为2.5～3.5米，您可以根据自己的实际情况裁剪使用。
+<p class="leading-[1.75] mt-0 mb-[1.6em] mx-0">请准备一块宽度约为 30 厘米的棉质白坯布。 建议长度在 2.5 米到 3.5 米之间，您可以根据自身情况裁剪使用。</p>
 
-<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1721931835/Fundoshi/0122sarashi2_lmsyg3.avif" width="200" height="200" alt="Midas" />
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1721931835/Fundoshi/0122sarashi2_lmsyg3.avif" loading="lazy" isZoomed alt="Midas" client:visible />
 
 </details>
 
-当您穿着“ 締め込み ”造型的服装时，搭配短款“ 法被 ”会显得更加干练精神。如果您的“ 法被 ”长度过长，可以将下摆向上折叠后塞入腰带中。最后，请务必将腰带系紧。
+<p class="leading-[1.75] mt-0 mb-[1.6em] mx-0">在穿着褌时，如果要搭配法被（一种日式短外套），建议选择短款的法被，更显干练精神。 如果您只有长款的法被，可以将下摆向上折叠，并用腰带固定，同样可以打造出利落的造型。</p>
 
-<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1721932074/Fundoshi/shimekomi03-1_xmfqgz.avif" width="200" height="200" alt="Midas" />
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1721932074/Fundoshi/shimekomi03-1_xmfqgz.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<p class="center text-[xxx-large] font-[bold] text-center">六尺褌的系法<font class="text-[rgb(255,0,0)]">（紧致风格）</font></p>
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722169212/Fundoshi/simekata-01_bq0ukw.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<p class="text-[26.67px]">将褌的前片部分用嘴咬住，从两腿之间向上穿过。</p>
+
+（将褌的前片向上折叠约 20 厘米以上，并用嘴咬住）
+
+（注意区分布料的正反面，确保靠近身体的一侧为正面）
+
+<div class="grid gap-2 grid-cols-2">
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722169569/Fundoshi/simekata-02_klpk97.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722169569/Fundoshi/simekata-03_kgg1vv.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+</div>
+
+<p class="text-[26.67px]">将褌在腰部绕一圈后打结固定。</p>
+
+（如果不想系得太紧，可以省略这一步）
+
+<div class="grid gap-2 grid-cols-2">
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722169928/Fundoshi/simekata-04_yvy3ns.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722169928/Fundoshi/simekata-05_ovjfgt.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+</div>
+
+<p class="text-[26.67px]">将褌从右侧胯部向上拉起，从腰带中穿过，暂时固定。</p>
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170084/Fundoshi/simekata-10_jhutcx.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<p class="text-[26.67px]">松开口中咬住的布料，此时褌的前片应该有两层。</p>
+
+（此时应该能看到褌的正面朝外）
+
+<div class="grid gap-2 grid-cols-2">
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170242/Fundoshi/simekata-06_gyjccx.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170244/Fundoshi/simekata-07_isb2w8.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+</div>
+
+<p class="text-[26.67px]">将前片向上翻折，并沿着腰带缠绕。</p>
+
+（为了方便演示，我们将褌的前片颜色做了调整）
+
+（缠绕时，尽量保持左右两侧的布料长度一致）
+
+<div class="grid gap-2 grid-cols-2">
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170446/Fundoshi/simekata-08_msnqhz.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170447/Fundoshi/simekata-09_q7mwxy.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+</div>
+
+<p class="text-[26.67px]">松开右手固定处，将褌的前片从腰带下方穿过，并向左后方拉伸，最后塞入腰带中固定。</p>
+
+<div class="grid gap-2 grid-cols-2">
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170701/Fundoshi/simekata-11_k6gzty.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170704/Fundoshi/simekata-12_y1zv9y.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+<Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722170701/Fundoshi/simekata-13_mzyhav.avif" loading="lazy" isZoomed alt="Midas" client:visible />
+
+</div>
+
+ <p class="text-[26.67px]">整理好前片，调整至舒适状态，褌就穿戴完成了。 </p>
+
+ <Aside type="caution" title="注意！">
+  建议您多加练习，找到最适合自己的系法和松紧度。
+</Aside>

@@ -15,7 +15,6 @@ const NotFoundPage: React.FC = () => {
         抱歉，我们无法找到您要访问的页面。
         </p>
       <Button
-        auto
         className="mt-6"
         onClick={() => (window.location.href = '/')}
       >
