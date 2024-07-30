@@ -4,6 +4,7 @@ description: Get started building your docs site with Starlight.
 ---
 
 import { ShowcaseImage } from 'starlight-showcases'
+import { ShowcaseText } from 'starlight-showcases'
 import { ShowcaseQuote } from 'starlight-showcases'
 import { ShowcaseYouTube } from 'starlight-showcases'
 import {Image} from "@nextui-org/image";
@@ -20,6 +21,16 @@ import { Aside } from '@astrojs/starlight/components';
   ]}
 />
 
+<ShowcaseText
+  entries={[
+    {
+      href: '/fundoshi/hundoshitahusagi',
+      title: '褌的学问',
+      description: '来了解褌的历史',
+    },
+  ]}
+/>
+
 <ShowcaseQuote
 className="relative w-[85%] p-[2.5%] rounded-[5px] border-[3px] border-solid"
   entries={[
@@ -29,7 +40,7 @@ className="relative w-[85%] p-[2.5%] rounded-[5px] border-[3px] border-solid"
       href: 'https://matsurijuku.com/rokushakufundoshi/',
     },
     {
-      quote: '在日本，参加祭祀活动时，人们通常会穿着传统服饰，其中一种经典的穿着方式叫做“締め込みスタイル”，也就是我们常说的“褌造型”。 而“六尺褌” (ろくしゃくふんどし) 则是这种造型中不可或缺的服饰。 今天，我们就来学习一下如何正确穿着六尺褌。',
+      quote: '参加祭祀活动时，人们通常会穿着传统服饰，其中一种经典的穿着方式叫做“締め込みスタイル”，也就是我们常说的“褌造型”。 而“六尺褌” (ろくしゃくふんどし) 则是这种造型中不可或缺的服饰。 今天，我们就来学习一下如何正确穿着六尺褌。',
       author: 'おしんちゃん 奥信酱',
       href: 'https://matsurijuku.com/rokushakufundoshi/',
     },
