@@ -6,7 +6,7 @@ import starlightImageZoom from 'starlight-image-zoom';
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import icon from "astro-icon";
 
-import node from "@astrojs/node";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -58,11 +58,9 @@ export default defineConfig({
   })), icon()],
   vite: {
     ssr: {
-      noExternal: /@mui\/.*?/,
+      noExternal: /@mui\/.*?/
     }
   },
   output: "server",
-  adapter: node({
-    mode: "standalone"
-  })
+  adapter: vercel()
 });
