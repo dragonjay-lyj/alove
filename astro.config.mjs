@@ -2,24 +2,28 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from "@astrojs/tailwind";
 import react from '@astrojs/react';
-import starlightImageZoom from 'starlight-image-zoom'
+import starlightImageZoom from 'starlight-image-zoom';
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
-
 import icon from "astro-icon";
+
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://fundoshi.dragonjay.top',
   integrations: [react(), starlight({
-    plugins: [starlightImageZoom(),starlightUtils({
+    plugins: [starlightImageZoom(), starlightUtils({
       multiSidebar: {
-        switcherStyle: "horizontalList",
-      },
-    }),],
+        switcherStyle: "horizontalList"
+      }
+    })],
     title: {
       'zh-CN': '紧缚',
       en: 'BDSM'
     },
+    customCss: [
+    // 你的自定义 CSS 文件的相对路径
+    'src/styles/custom.css'],
     defaultLocale: 'root',
     locales: {
       root: {
@@ -51,5 +55,14 @@ export default defineConfig({
   }), tailwind(tailwind({
     // 禁用默认的基础样式
     applyBaseStyles: false
-  })), icon()]
+  })), icon()],
+  vite: {
+    ssr: {
+      noExternal: /@mui\/.*?/,
+    }
+  },
+  output: "server",
+  adapter: node({
+    mode: "standalone"
+  })
 });

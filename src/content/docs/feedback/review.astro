@@ -1,0 +1,16 @@
+---
+import TestimonialTable from '../../../components/TestimonialTable';
+import { getDatabase } from '../../../utils/notion'; // 假设你有一个函数来获取 Notion 数据
+
+const databaseId = 'f5d52716a30e4219b83cd9a700326a45';
+const cards = await getDatabase(databaseId);
+
+try {
+  const cards = await getDatabase(databaseId);
+} catch (error) {
+  console.error('Failed to fetch database:', error);
+  const cards = [];
+}
+---
+
+<TestimonialTable cards={cards} client:visible/>
