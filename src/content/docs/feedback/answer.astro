@@ -1,0 +1,29 @@
+---
+import TableComponent from '../../../components/Answer';
+
+const dataList = [
+  {
+    time: '2024/07/06 19:25',
+    name: 'tomohiro',
+    age: '44',
+    gender: '男',
+    occupation: '兼职工作',
+    location: '保密',
+    questions: [
+      { title: '您是什么时候第一次穿褌的？', answer: '9岁。' },
+      { title: '是因为参加了什么活动吗？ 如果是的话，可以告诉我们是什么活动吗？', answer: '没有参加什么活动。' },
+      { title: '您第一次穿的褌是什么类型的？', answer: '六尺ふんどし（前袋型）' },
+      { title: '您第一次穿褌的时候感觉怎么样？', answer: '感觉很帅气' },
+      { title: '可以跟我们分享一下您第一次穿褌的经历吗？', answer: '我是在看到一张海报后，被海报中那个性感的少年所吸引，从此迷上了六尺褌。' },
+      { title: '您是什么时候开始对褌产生兴趣的？', answer: '9岁。' },
+      { title: '您现在还会穿褌吗？', answer: '完全不穿。' },
+      { title: '您通常会在什么情况下穿褌？', answer: '' },
+      { title: '您的家人或伴侣知道您穿褌吗？', answer: '知道。' },
+      { title: '请问穿过六尺ふんどし（前袋型）、祭典褌、相扑褌的朋友：您通常如何放置阴茎？', answer: '向上。' },
+      { title: '请给那些还没有尝试过褌的朋友们留言吧！', answer: '建议您至少尝试穿一次。不过，也不要太过沉迷其中。' },
+    ]
+  },
+  // 可以继续添加更多项
+];
+---
+<TableComponent dataList={dataList} client:visible />

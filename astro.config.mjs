@@ -5,14 +5,18 @@ import react from '@astrojs/react';
 import starlightImageZoom from 'starlight-image-zoom';
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import icon from "astro-icon";
-
+import starlightViewModes from 'starlight-view-modes'
 import vercel from "@astrojs/vercel/serverless";
+import Icons from 'unplugin-icons/vite'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://fundoshi.dragonjay.top',
   integrations: [react(), starlight({
-    plugins: [starlightImageZoom(), starlightUtils({
+    plugins: [starlightImageZoom(),starlightViewModes(), starlightUtils({
+      components: {
+        Head: "./src/components/Head.astro",
+      },
       multiSidebar: {
         switcherStyle: "horizontalList"
       }
@@ -39,7 +43,8 @@ export default defineConfig({
     // 你的 Tailwind 基础样式的相对路径
     './src/tailwind.css'],
     social: {
-      github: 'https://github.com/withastro/starlight'
+      github: 'https://github.com/dragonjay-lyj/alove',
+      telegram: 'https://t.me/NeilBowM',
     },
     sidebar: [{
       label: '褌',
@@ -52,11 +57,12 @@ export default defineConfig({
         }
       }]
     }]
-  }), tailwind(tailwind({
+  }), tailwind({
     // 禁用默认的基础样式
     applyBaseStyles: false
-  })), icon()],
+  }), icon()],
   vite: {
+    plugins: [Icons({ compiler: 'astro' })],
     ssr: {
       noExternal: /@mui\/.*?/
     }
