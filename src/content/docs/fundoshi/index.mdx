@@ -9,6 +9,7 @@ import { ShowcaseQuote } from 'starlight-showcases'
 import { ShowcaseYouTube } from 'starlight-showcases'
 import {Image} from "@nextui-org/image";
 import { Aside } from '@astrojs/starlight/components';
+import { Waline } from '../../../../src/components/waline';
 
 <ShowcaseImage
   entries={[
@@ -147,3 +148,12 @@ className="relative w-[85%] p-[2.5%] rounded-[5px] border-[3px] border-solid"
  <Aside type="caution" title="注意！">
   建议您多加练习，找到最适合自己的系法和松紧度。
 </Aside>
+
+<Waline serverURL="https://com.dragonjay.top" path="/fundoshi" pageview={true} emoji={[
+          'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+          'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+          'https://unpkg.com/@waline/emojis@1.2.0/qq',
+          'https://unpkg.com/@waline/emojis@1.2.0/tieba',
+          'https://unpkg.com/@waline/emojis@1.2.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.2.0/soul-emoji'
+        ]} client:visible />

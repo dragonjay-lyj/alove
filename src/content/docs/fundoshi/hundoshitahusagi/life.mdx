@@ -5,6 +5,7 @@ description: 在生活中，褌的作用...
 
 import { Aside } from '@astrojs/starlight/components';
 import {Image} from "@nextui-org/image";
+import { Waline } from '../../../../../src/components/waline';
 
 ### 褌と健康
 
@@ -99,3 +100,12 @@ import {Image} from "@nextui-org/image";
 还有一些人会带着褌一起洗澡，将褌当作毛巾来擦拭身体。
 
 这样一来，既能方便地将褌清洗干净，又能增进人与衣物之间的感情，可谓一举两得。
+
+<Waline serverURL="https://com.dragonjay.top" path="/hundoshitahusagi/life" pageview={true} emoji={[
+          'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+          'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+          'https://unpkg.com/@waline/emojis@1.2.0/qq',
+          'https://unpkg.com/@waline/emojis@1.2.0/tieba',
+          'https://unpkg.com/@waline/emojis@1.2.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.2.0/soul-emoji'
+        ]} client:visible />

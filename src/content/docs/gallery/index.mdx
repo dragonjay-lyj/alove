@@ -4,6 +4,7 @@ description: Get started building your docs site with Starlight.
 template: splash
 ---
 import {Image} from "@nextui-org/image";
+import { Waline } from '../../../../src/components/waline';
 
 
 <details>
@@ -1693,3 +1694,12 @@ X一面道'渴望已久'，一面含吮吾身，时而以手足按其头，使�
 </div>
 
 </details>
+
+<Waline serverURL="https://com.dragonjay.top" path="/gallery" pageview={true} emoji={[
+          'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+          'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+          'https://unpkg.com/@waline/emojis@1.2.0/qq',
+          'https://unpkg.com/@waline/emojis@1.2.0/tieba',
+          'https://unpkg.com/@waline/emojis@1.2.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.2.0/soul-emoji'
+        ]} client:visible />

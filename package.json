@@ -39,6 +39,7 @@
     "unplugin-icons": "^0.19.1"
   },
   "devDependencies": {
+    "@waline/client": "^3.3.0",
     "astro-vtbot": "^1.8.3"
   }
 }

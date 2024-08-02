@@ -5,6 +5,7 @@ description: 近年来，褌却逐渐重回人们的视野
 
 import {Image} from "@nextui-org/image";
 import { Aside } from '@astrojs/starlight/components';
+import { Waline } from '../../../../../src/components/waline';
 
 然而，近年来，褌却逐渐重回人们的视野，并吸引了越来越多的拥趸。
 
@@ -145,3 +146,12 @@ import { Aside } from '@astrojs/starlight/components';
 <Aside type="note" title="(注)">
 在本主题中，我们将三角裤、平角裤等所有西方内裤统称为“内裤”。
 </Aside>
+
+<Waline serverURL="https://com.dragonjay.top" path="/hundoshitahusagi/basis" pageview={true} emoji={[
+          'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+          'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+          'https://unpkg.com/@waline/emojis@1.2.0/qq',
+          'https://unpkg.com/@waline/emojis@1.2.0/tieba',
+          'https://unpkg.com/@waline/emojis@1.2.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.2.0/soul-emoji'
+        ]} client:visible />
