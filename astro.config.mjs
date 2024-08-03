@@ -12,9 +12,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://fundoshi.dragonjay.top',
+  site: 'https://alove.dragonjay.top',
   integrations: [react(), starlight({
-    site: 'https://alove.dragonjay.top',
     plugins: [starlightImageZoom(),starlightViewModes(),sitemap(), starlightUtils({
       components: {
         Head: "./src/components/Head.astro",
