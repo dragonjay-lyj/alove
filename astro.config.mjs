@@ -7,14 +7,13 @@ import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import icon from "astro-icon";
 import starlightViewModes from 'starlight-view-modes'
 import vercel from "@astrojs/vercel/serverless";
-import Icons from 'unplugin-icons/vite'
-import sitemap from '@astrojs/sitemap';
+import Icons from 'unplugin-icons/vite';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alove.dragonjay.top',
   integrations: [react(), starlight({
-    plugins: [starlightImageZoom(),starlightViewModes(),sitemap(), starlightUtils({
+    plugins: [starlightImageZoom(),starlightViewModes(), starlightUtils({
       components: {
         Head: "./src/components/Head.astro",
       },
