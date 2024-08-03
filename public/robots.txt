@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alove.dragonjay.top/sitemap-index.xml

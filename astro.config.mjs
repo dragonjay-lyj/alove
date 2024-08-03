@@ -8,12 +8,14 @@ import icon from "astro-icon";
 import starlightViewModes from 'starlight-view-modes'
 import vercel from "@astrojs/vercel/serverless";
 import Icons from 'unplugin-icons/vite'
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://fundoshi.dragonjay.top',
   integrations: [react(), starlight({
-    plugins: [starlightImageZoom(),starlightViewModes(), starlightUtils({
+    site: 'https://alove.dragonjay.top',
+    plugins: [starlightImageZoom(),starlightViewModes(),sitemap(), starlightUtils({
       components: {
         Head: "./src/components/Head.astro",
       },
