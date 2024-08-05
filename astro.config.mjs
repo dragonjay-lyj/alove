@@ -9,6 +9,7 @@ import starlightViewModes from 'starlight-view-modes'
 import vercel from "@astrojs/vercel/serverless";
 import Icons from 'unplugin-icons/vite';
 import commonjs from 'vite-plugin-commonjs';
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
@@ -66,5 +67,9 @@ export default defineConfig({
     plugins: [Icons({ compiler: 'astro' }),commonjs()],
   },
   output: "server",
-  adapter: vercel()
+  adapter: vercel(
+    {
+      webAnalytics: { enabled: true }
+    }
+  )
 });
