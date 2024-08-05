@@ -22,9 +22,7 @@
     "@emotion/styled": "^11.13.0",
     "@iconify/json": "^2.2.233",
     "@lorenzo_lewis/starlight-utils": "^0.1.2",
-    "@mui/material": "^6.0.0-beta.4",
     "@nextui-org/react": "^2.4.6",
-    "@notionhq/client": "^2.2.15",
     "astro": "^4.10.2",
     "astro-feelback": "^0.3.4",
     "astro-icon": "^1.1.0",
@@ -41,6 +39,7 @@
   },
   "devDependencies": {
     "@waline/client": "^3.3.0",
-    "astro-vtbot": "^1.8.3"
+    "astro-vtbot": "^1.8.3",
+    "vite-plugin-commonjs": "^0.10.1"
   }
 }

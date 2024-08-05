@@ -8,6 +8,7 @@ import icon from "astro-icon";
 import starlightViewModes from 'starlight-view-modes'
 import vercel from "@astrojs/vercel/serverless";
 import Icons from 'unplugin-icons/vite';
+import commonjs from 'vite-plugin-commonjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -62,10 +63,7 @@ export default defineConfig({
     applyBaseStyles: false
   }), icon()],
   vite: {
-    plugins: [Icons({ compiler: 'astro' })],
-    ssr: {
-      noExternal: /@mui\/.*?/
-    }
+    plugins: [Icons({ compiler: 'astro' }),commonjs()],
   },
   output: "server",
   adapter: vercel()
