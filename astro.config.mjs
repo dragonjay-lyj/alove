@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from "@astrojs/tailwind";
 import react from '@astrojs/react';
-import starlightImageZoom from 'starlight-image-zoom';
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import icon from "astro-icon";
 import starlightViewModes from 'starlight-view-modes'
@@ -25,7 +24,7 @@ export default defineConfig({
         }
       }
     ],
-    plugins: [starlightImageZoom(),starlightViewModes(),starlightHeadingBadges(), starlightUtils({
+    plugins: [starlightViewModes(),starlightHeadingBadges(), starlightUtils({
       components: {
         Head: "./src/components/Head.astro",
       },

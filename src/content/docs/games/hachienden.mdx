@@ -9,6 +9,9 @@ import { Aside } from '@astrojs/starlight/components';
 import {Button} from "@nextui-org/button";
 import {Link} from "@nextui-org/link";
 import { PhPatreonLogoDuotone } from "../../../../src/components/PatreonLogo";
+import Fancybox from "../../../../src/components/Fancybox";
+import { LinkPreview } from 'astro-embed';
+import {Image} from "@nextui-org/image";
 
 <Aside type="caution" title="当心！">
   这个游戏包含敏感内容，或者不适合在工作时访问。
@@ -30,10 +33,37 @@ import { PhPatreonLogoDuotone } from "../../../../src/components/PatreonLogo";
 
 </div>
 
-## 图库
+## 图库 :badge[点击放大]{variant=success}
 
- <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto p-10">
-        <a data-fancybox="gallery" href="https://lipsum.app/id/46/1600x1200">
+<Fancybox
+client:visible
+  options={{
+    dragToClose: false,
+
+  Toolbar: {
+    display: {
+      left: ['close'],
+      middle: [],
+      right: [],
+    },
+  },
+
+  Images: {
+    zoom: false,
+  },
+
+  Thumbs: {
+    type: 'classic',
+  },
+
+  Carousel: {
+    transition: false,
+    friction: 0,
+  },
+  }}
+>
+<div className="grid grid-cols-3 gap-4 max-w-xl mx-auto p-10">
+  <a data-fancybox="gallery" href="https://lipsum.app/id/46/1600x1200">
           <img class="rounded" src="https://lipsum.app/id/46/200x150" />
         </a>
         <a data-fancybox="gallery" href="https://lipsum.app/id/47/1600x1200">
@@ -42,6 +72,29 @@ import { PhPatreonLogoDuotone } from "../../../../src/components/PatreonLogo";
         <a data-fancybox="gallery" href="https://lipsum.app/id/51/1600x1200">
           <img class="rounded" src="https://lipsum.app/id/51/200x150" />
         </a>
-      </div>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/dragonjay-lyj/edge@main/index.js"></script>
+        </div>
+</Fancybox>
 
+## 游玩视频
+
+<LinkPreview id="https://www.bilibili.com/video/BV1Lp4y1a7sP/" />
+
+<LinkPreview id="https://www.bilibili.com/video/BV1rK4y1d7i6/" />
+
+## 下载链接
+
+<div class="my-2 flex gap-2">
+
+<Link client:visible color="foreground" href="https://mega.nz/#!ITknmDJL!2HLq-uUP5fZWjCneMEol8MkWI8SzjajkVQxKT8wolt8" target="_blank">
+<Button client:visible aria-disabled="false" type="button" startContent={<PhPatreonLogoDuotone client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
+  <Image client:visible src="https://t2.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mega.nz&size=16" className="relative top-0.5 my-0 ml-0 mr-2" /><span>Continue to Mega</span>
+</Button>
+</Link>
+
+<Link client:visible color="foreground" href="https://workupload.com/file/fyDCabbAUt9" target="_blank">
+<Button client:visible aria-disabled="false" type="button" startContent={<PhPatreonLogoDuotone client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
+  <Image client:visible src="https://t2.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://workupload.com&size=16" className="relative top-0.5 my-0 ml-0 mr-2" /><span>Continue to Workupload</span>
+</Button>
+</Link>
+
+</div>
