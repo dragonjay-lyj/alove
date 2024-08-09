@@ -48,17 +48,18 @@ export default defineConfig({
       github: 'https://github.com/dragonjay-lyj/alove',
       telegram: 'https://t.me/NeilBowM',
     },
-    sidebar: [{
-      label: '褌',
-      items: [
-      // Each item here is one entry in the navigation menu.
+    sidebar: [
       {
-        label: '六尺道场',
-        autogenerate: {
-          directory: 'constellations'
-        }
-      }]
-    }]
+        label: '褌',
+        // 自动生成一个链接分组，用于 '星座' 目录。
+        autogenerate: { directory: 'fundoshi' },
+      },
+      {
+        label: '调查问卷',
+        // 自动生成一个链接分组，用于 '星座' 目录。
+        autogenerate: { directory: 'feedback' },
+      },
+    ],
   }), tailwind({
     // 禁用默认的基础样式
     applyBaseStyles: false
