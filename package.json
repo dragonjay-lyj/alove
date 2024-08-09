@@ -20,6 +20,7 @@
     "@astrojs/vercel": "^7.7.2",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
+    "@fancyapps/ui": "^5.0.36",
     "@iconify/json": "^2.2.233",
     "@lorenzo_lewis/starlight-utils": "^0.1.2",
     "@nextui-org/react": "^2.4.6",
@@ -28,9 +29,11 @@
     "astro-feelback": "^0.3.4",
     "astro-icon": "^1.1.0",
     "framer-motion": "^11.3.17",
+    "primereact": "^10.8.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sharp": "^0.32.5",
+    "starlight-heading-badges": "^0.1.0",
     "starlight-image-zoom": "^0.7.0",
     "starlight-showcases": "^0.2.0",
     "starlight-view-modes": "^0.6.0",
@@ -39,6 +42,7 @@
     "unplugin-icons": "^0.19.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.14",
     "@waline/client": "^3.3.0",
     "astro-vtbot": "^1.8.3",
     "vite-plugin-commonjs": "^0.10.1"

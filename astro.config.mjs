@@ -10,12 +10,22 @@ import vercel from "@astrojs/vercel/serverless";
 import Icons from 'unplugin-icons/vite';
 import commonjs from 'vite-plugin-commonjs';
 import vercel from '@astrojs/vercel/serverless';
+import starlightHeadingBadges from 'starlight-heading-badges'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alove.dragonjay.top',
   integrations: [react(), starlight({
-    plugins: [starlightImageZoom(),starlightViewModes(), starlightUtils({
+    head: [
+      {
+        tag: 'link',
+        attrs: {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css'
+        }
+      }
+    ],
+    plugins: [starlightImageZoom(),starlightViewModes(),starlightHeadingBadges(), starlightUtils({
       components: {
         Head: "./src/components/Head.astro",
       },

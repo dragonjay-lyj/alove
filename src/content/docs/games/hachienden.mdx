@@ -1,0 +1,51 @@
+---
+title: Hachienden
+description: 来看看别人的看法吧...
+template: splash
+---
+
+
+import { Message } from 'primereact/message';
+import {Button} from "@nextui-org/button";
+import {Link} from "@nextui-org/link";
+import { PhPatreonLogoDuotone } from "../../../../src/components/PatreonLogo";
+
+
+<Message
+client:visible
+className="border-primary w-full justify-content-start"
+severity="warn"
+content="这个游戏包含敏感内容，或者不适合在工作时访问。"
+/>
+
+<div class="my-2 flex gap-2">
+
+<Link client:visible color="foreground" href="https://www.patreon.com/tsukumon" target="_blank">
+<Button client:visible aria-disabled="false" type="button" startContent={<PhPatreonLogoDuotone client:visible/>} bordered className="relative box-border inline-flex items-center justify-center rounded-lg border border-solid border-transparent bg-[#617DAB] px-5 py-0 text-sm font-bold leading-none tracking-[-0.02em] text-white no-underline outline-offset-0 transition-[ease] duration-[350ms]">
+  <div class="visible mx-0 my-auto flex itemts-cener justify-center gap-x-1 p-0"><div class="mx-0 my-2.5 flex h-full flex-col items-center justify-center whitespace-nowrap p-0">成为会员</div></div>
+</Button>
+</Link>
+
+<Link client:visible color="foreground" href="https://tsukumon.itch.io/hachienden/purchase" target="_blank">
+<Button client:visible aria-disabled="false" type="button" startContent={<PhPatreonLogoDuotone client:visible/>} bordered className="mr-2.5 box-border inline-block h-[35px] min-w-[75px] cursor-pointer select-none rounded-[3px] border border-solid border-[rgba(0,0,0,0.1)] bg-[#fa5c5c] px-2.5 py-0 text-center font-[bold] text-sm leading-[33px] text-white no-underline shadow-[inset_0_0_1px_rgba(255,255,255,0.21)]">
+  Buy Now
+</Button>
+</Link>
+
+</div>
+
+## 图库
+
+ <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto p-10">
+        <a data-fancybox="gallery" href="https://lipsum.app/id/46/1600x1200">
+          <img class="rounded" src="https://lipsum.app/id/46/200x150" />
+        </a>
+        <a data-fancybox="gallery" href="https://lipsum.app/id/47/1600x1200">
+          <img class="rounded" src="https://lipsum.app/id/47/200x150" />
+        </a>
+        <a data-fancybox="gallery" href="https://lipsum.app/id/51/1600x1200">
+          <img class="rounded" src="https://lipsum.app/id/51/200x150" />
+        </a>
+      </div>
+    <script type="module" src="../src/js/index.js"></script>
+

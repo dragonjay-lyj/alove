@@ -9,5 +9,5 @@ export default {
 	},
 	plugins: [starlightPlugin()],
 	darkMode: "class",
-  plugins: [nextui()]
+  plugins: [require('@tailwindcss/typography'),nextui()]
 }
