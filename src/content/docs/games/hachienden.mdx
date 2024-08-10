@@ -1,6 +1,6 @@
 ---
 title: Hachienden
-description: 来看看别人的看法吧...
+description: Hachienden是一款视觉小说风格的RPG，你的命运掌握在你的手中。
 template: splash
 ---
 
@@ -14,6 +14,9 @@ import { LinkPreview } from 'astro-embed';
 import {Image} from "@nextui-org/image";
 import {Avatar} from "@nextui-org/avatar";
 import { Waline } from '../../../../src/components/waline';
+import { DeviconWindows11 } from "../../../../src/components/DeviconWindows11";
+import { IconParkOutlineMacFinder } from "../../../../src/components/IconParkOutlineMacFinder";
+
 
 <Aside type="caution" title="当心！">
   这个游戏包含敏感内容，或者不适合在工作时访问。
@@ -65,14 +68,11 @@ client:visible
   }}
 >
 <div className="grid grid-cols-3 gap-4 max-w-xl mx-auto p-10">
-  <a data-fancybox="gallery" href="https://lipsum.app/id/46/1600x1200">
-          <img class="rounded" src="https://lipsum.app/id/46/200x150" />
+  <a data-fancybox="gallery" href="https://res.cloudinary.com/dkhp3hucr/image/upload/v1723255467/games/titlehachi_mqb203.avif">
+          <Image client:visible className="rounded" src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1723255467/games/titlehachi_mqb203.avif" />
         </a>
-        <a data-fancybox="gallery" href="https://lipsum.app/id/47/1600x1200">
-          <img class="rounded" src="https://lipsum.app/id/47/200x150" />
-        </a>
-        <a data-fancybox="gallery" href="https://lipsum.app/id/51/1600x1200">
-          <img class="rounded" src="https://lipsum.app/id/51/200x150" />
+        <a data-fancybox="gallery" href="https://res.cloudinary.com/dkhp3hucr/image/upload/v1723256349/games/last_euovge.avif">
+          <Image client:visible className="rounded" src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1723256349/games/last_euovge.avif" />
         </a>
         </div>
 </Fancybox>
@@ -88,13 +88,29 @@ client:visible
 <div class="my-2 flex gap-2">
 
 <Link client:visible color="foreground" href="https://mega.nz/#!ITknmDJL!2HLq-uUP5fZWjCneMEol8MkWI8SzjajkVQxKT8wolt8" target="_blank">
-<Button client:visible aria-disabled="false" type="button" startContent={<PhPatreonLogoDuotone client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
+<Button client:visible aria-disabled="false" type="button" startContent={<DeviconWindows11 client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
   <Image client:visible src="https://t2.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mega.nz&size=16" className="relative top-0.5 my-0 ml-0 mr-2" /><span>Continue to Mega</span>
 </Button>
 </Link>
 
 <Link client:visible color="foreground" href="https://workupload.com/file/fyDCabbAUt9" target="_blank">
-<Button client:visible aria-disabled="false" type="button" startContent={<PhPatreonLogoDuotone client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
+<Button client:visible aria-disabled="false" type="button" startContent={<DeviconWindows11 client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
+  <Image client:visible src="https://t2.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://workupload.com&size=16" className="relative top-0.5 my-0 ml-0 mr-2" /><span>Continue to Workupload</span>
+</Button>
+</Link>
+
+</div>
+
+<div class="my-2 flex gap-2">
+
+<Link client:visible color="foreground" href="https://mega.nz/file/MKU0CJxZ#2bQy3JsLdW2dBL4gFxCB-FU8P9wJGHDAilTReiBwKLU" target="_blank">
+<Button client:visible aria-disabled="false" type="button" startContent={<IconParkOutlineMacFinder client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
+  <Image client:visible src="https://t2.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mega.nz&size=16" className="relative top-0.5 my-0 ml-0 mr-2" /><span>Continue to Mega</span>
+</Button>
+</Link>
+
+<Link client:visible color="foreground" href="https://workupload.com/file/QZ7HTw2DuTs" target="_blank">
+<Button client:visible aria-disabled="false" type="button" startContent={<IconParkOutlineMacFinder client:visible/>} bordered className="relative flex mx-0 mb-0 mt-3 rounded bg-[#2a2e33] px-5 py-0 text-[1.1em] leading-10 text-[#eee] no-underline transition-[0.15s] duration-[background-color]">
   <Image client:visible src="https://t2.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://workupload.com&size=16" className="relative top-0.5 my-0 ml-0 mr-2" /><span>Continue to Workupload</span>
 </Button>
 </Link>
