@@ -5,9 +5,9 @@ import {Textarea} from "@nextui-org/input";
 import {Card} from "@nextui-org/card";
 const ReadOnlyForm = ({ data }) => {
   return (
-    <div className="p-6 ">
+    <div className="my-20">
       {data.map((formData, index) => (
-        <Card key={index} className="grid mb-20 lg:grid-cols-2 lg:gap-2 xl:grid-cols-2 xl:gap-2 2xl:grid-cols-2 2xl:gap-2">
+        <Card key={index} className="grid my-20 lg:grid-cols-2 lg:gap-2 xl:grid-cols-2 xl:gap-2 2xl:grid-cols-2 2xl:gap-2">
           {/* 第1行：时间 */}
           <div className='flex gap-[2px] max-w-[400px]'>
             <Input type="date" classNames="input" bordered label="时间" value={formData.time} isReadOnly className="mt-1 w-full" />
