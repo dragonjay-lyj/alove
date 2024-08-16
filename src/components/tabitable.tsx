@@ -12,18 +12,15 @@ export default function App() {
       <TableBody>
         <TableRow key="1">
           <TableCell><Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722915777/Fundoshi/w_tabi_1_jsn6v7.avif" loading="lazy" isZoomed alt="Midas" /></TableCell>
-          <TableCell>正确的穿衣顺序是：先穿上褌或衬裤等遮盖下半身的内衣，然后再穿足袋。 如果您要穿衬裙或衬裤，也应该在穿上足袋之后再穿。 这是因为，如果先穿衬裙或衬裤，再穿足袋，可能会导致和服下摆出现褶皱，影响美观。 至少要在穿长襦袢之前穿上足袋。
-穿足袋时，请您像左图所示，将要穿足袋的那只脚立起来，身体微微下蹲。 不要盘腿坐着穿足袋，这是一种不雅观的姿势。</TableCell>
+          <TableCell>一般来说，先穿褌、衬裤这类遮盖下半身的内衣，然后再穿足袋。即使要穿汗衫或裙衬，也要先穿足袋，因为后穿足袋可能会弄乱衣着。至少在穿长襦袢之前要把足袋穿上。穿足袋时，要像左图那样，单腿站立，上身微微前倾。盘腿穿足袋的姿势是不正确的。</TableCell>
         </TableRow>
         <TableRow key="2">
           <TableCell><Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722916073/Fundoshi/w_tabi_2_n45prw.avif" loading="lazy" isZoomed alt="Midas" /></TableCell>
-          <TableCell>如图所示，将足袋向外翻折一半左右，然后套在脚上，并用双手向后拉伸，确保脚趾完全伸入足袋内部。 然后将翻折的部分翻回来，包裹住脚后跟。</TableCell>
+          <TableCell>穿的时候，先将足袋向外翻折一半，轻轻套在脚上，用双手将足尖向内推到最里面。然后将翻折的部分复原，包裹住整个脚跟。</TableCell>
         </TableRow>
         <TableRow key="3">
           <TableCell><Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722915976/Fundoshi/w_tabi_3_butgki.avif" loading="lazy" isZoomed alt="Midas" /></TableCell>
-          <TableCell>固定搭扣时，请务必按照从下往上的顺序，将搭扣依次挂在“かけ糸” (kakeito) 上。 每枚搭扣都会有两条“かけ糸”，但只有外侧的那条才是正确的固定位置，内侧的“かけ糸”是备用的。 选择足袋尺码时，也应该将搭扣挂在外侧的“かけ糸”上进行判断。
-如果搭扣难以固定，您可以尝试转动脚踝，或者用手将足袋向内或向外拉伸，以便于固定搭扣。
-另外，脱足袋时则没有太多需要注意的地方，您可以随意脱下。</TableCell>
+          <TableCell>金属挂钩必须按照从下往上的顺序，依次扣在系线上。系线通常有两条，但扣挂钩时，靠近内侧的是备用线。将挂钩扣在外侧的系线上才是正确的位置，此时足袋的尺寸才是准确的。选择足袋尺寸时，一定要将挂钩扣在外侧的系线上进行比对。如果挂钩难以扣上，可以抓住脚踝向外或向内扭动，以便扣紧。另外，脱足袋时则无需拘泥于顺序，随意脱下即可。</TableCell>
         </TableRow>
       </TableBody>
     </Table>

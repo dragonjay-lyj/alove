@@ -12,15 +12,15 @@ export default function App() {
       <TableBody>
         <TableRow key="1">
           <TableCell><Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722915777/Fundoshi/w_tabi_1_jsn6v7.avif" loading="lazy" isZoomed alt="Midas" /></TableCell>
-          <TableCell>Traditionally, tabi are donned after undergarments like fundoshi (loincloth) or steteko (long underwear) have been secured. Even when layering garments such as hadajuban (undershirts) or susuyoke (underskirts), tabi come first. This sequence is crucial for maintaining the structural integrity of the kimono ensemble, preventing unsightly bunching or twisting. As a general rule, always put on your tabi before your nagajuban (long undershirt).Stand on one leg, slightly bending the knee of the leg you'll be putting the tabi on. This allows for greater ease of movement and ensures a proper fit. Avoid putting on tabi while sitting cross-legged, as this can lead to twisting and discomfort.</TableCell>
+          <TableCell>Traditionally, after donning undergarments like fundoshi or steteko, tabi are the next to be worn. Even when wearing hadajuban (undershirt) or susoyoke (overskirt), tabi come first. Putting on tabi afterwards can actually disrupt the fit of these garments. At the very least, make sure your tabi are on before your nagajuban.When putting on tabi, stand on one leg and bend at the waist, as shown on the left.  Sitting cross-legged while putting on tabi is not the proper way.</TableCell>
         </TableRow>
         <TableRow key="2">
           <TableCell><Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722916073/Fundoshi/w_tabi_2_n45prw.avif" loading="lazy" isZoomed alt="Midas" /></TableCell>
-          <TableCell>Hold the tabi in your hand and fold the upper section outward about halfway. Slip your foot into the tabi, ensuring your toes reach the very end. Use both hands to gently pull the fabric forward, smoothing out any wrinkles.Once your toes are comfortably in place, unfold the upper section of the tabi and wrap it snugly around your heel.</TableCell>
+          <TableCell>Fold the tabi outward about halfway, as shown on the left, then slip your foot in, using both hands to pull the fabric forward so your toes reach the end.  Next, fold the back part up and over your heel.</TableCell>
         </TableRow>
         <TableRow key="3">
           <TableCell><Image src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1722915976/Fundoshi/w_tabi_3_butgki.avif" loading="lazy" isZoomed alt="Midas" /></TableCell>
-          <TableCell>Always fasten the kohaze in order from the bottom upEach kohaze has two loops. The outer loop is the correct one for fastening, ensuring a snug fit. The inner loop serves as a spare. When trying on tabi, always fasten the kohaze to the outer loop to determine the correct size.If you find it difficult to fasten the kohaze, try gently twisting your ankle inward or outward to create a bit of slack.And finally, a word on tabi removal: while a specific method is prescribed for putting them on, feel free to take them off however you please!</TableCell>
+          <TableCell>When fastening the kohaze hooks, always start from the bottom and work your way up, hooking them onto the loops. You'll notice two loops for each hook. The inner loop is a spare. The correct position for fastening the kohaze is on the outer loop – this ensures a precise fit. When choosing your tabi size, always fasten the hooks on the outer loops for an accurate measurement. If you find the hooks difficult to fasten, try twisting your ankle outwards or inwards for better access.  And by the way, feel free to remove your tabi however you like.</TableCell>
         </TableRow>
       </TableBody>
     </Table>
