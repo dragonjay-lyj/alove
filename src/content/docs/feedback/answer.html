@@ -1,0 +1,1812 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="2.用户名（30 个字符以内）.单行文本">
+    <div class="flex items-center justify-between mb-4" role="heading" aria-level="2">
+      <div class="flex items-center">
+        <span class="text-lg font-medium text-gray-900 mr-2">2.</span>
+        <span class="text-lg font-medium text-gray-900">用户名（30 个字符以内）</span>
+      </div>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 46 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudtfe08abfefa1a483bacb8e4ceadf7eb02"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudtfe08abfefa1a483bacb8e4ceadf7eb02', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '小西行长', weight: 3, color: '#182047' },
+        { name: '言午许', weight: 2, color: '#2c3c85' },
+        { name: '登向明星', weight: 2, color: '#3c51b4' },
+        { name: 'wh', weight: 2, color: '#4760d5' },
+        { name: 'Editor', weight: 2, color: '#182047' },
+        { name: 'wtxx', weight: 1, color: '#2c3c85' },
+        { name: 'chen_the_kylin', weight: 1, color: '#3c51b4' },
+        { name: 'xueyanlei183', weight: 1, color: '#4760d5' },
+        { name: '温蕊', weight: 1, color: '#182047' },
+        { name: 'yyyyypop', weight: 1, color: '#2c3c85' },
+        { name: 'LLY', weight: 1, color: '#3c51b4' },
+        { name: '酸奶泡', weight: 1, color: '#4760d5' },
+        { name: 'LCY0166', weight: 1, color: '#182047' },
+        { name: '威震天', weight: 1, color: '#2c3c85' },
+        { name: '钦戈', weight: 1, color: '#3c51b4' },
+        { name: '宫野玖泽', weight: 1, color: '#4760d5' },
+        { name: 'lixxveron', weight: 1, color: '#182047' },
+        { name: 'Matusima', weight: 1, color: '#2c3c85' },
+        { name: '啊鱼', weight: 1, color: '#3c51b4' },
+        { name: 'akaito', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="3.年龄.单行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">3.</span>
+      <span class="text-lg font-medium text-gray-900">年龄</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 46 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt8fa06e70b328418b9fa1956e4fc32c33"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt8fa06e70b328418b9fa1956e4fc32c33', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '20', weight: 8, color: '#4760d5' },
+        { name: '23', weight: 7, color: '#3c51b4' },
+        { name: '22', weight: 6, color: '#2c3c85' },
+        { name: '30', weight: 4, color: '#4760d5' },
+        { name: '19', weight: 3, color: '#3c51b4' },
+        { name: '21', weight: 3, color: '#182047' },
+        { name: '16', weight: 2, color: '#182047' },
+        { name: '24', weight: 2, color: '#4760d5' },
+        { name: '27', weight: 2, color: '#2c3c85' },
+        { name: '18', weight: 1, color: '#2c3c85' },
+        { name: '25', weight: 1, color: '#182047' },
+        { name: '29', weight: 1, color: '#3c51b4' },
+        { name: '41', weight: 1, color: '#182047' },
+        { name: '80', weight: 1, color: '#2c3c85' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="4.性别.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">4.</span>
+      <span class="text-lg font-medium text-gray-900">性别</span>
+    </div>
+    <div class="flex flex-col items-center mb-4" aria-label="图表">
+      <div class="w-48 h-48" id="gender-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 4 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="男性. 39 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">男性</td>
+            </tr>
+            <tr role="listitem" aria-label="女性. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">女性</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="跨性别. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">跨性别</td>
+            </tr>
+            <tr role="listitem" aria-label="保密. 5 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">保密</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('gender-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '男性', y: 39, color: '#3b82f6' },
+        { name: '女性', y: 1, color: '#22c55e' },
+        { name: '跨性别', y: 1, color: '#ef4444' },
+        { name: '保密', y: 5, color: '#eab308' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="5.职业.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">5.</span>
+      <span class="text-lg font-medium text-gray-900">职业</span>
+    </div>
+    <div class="flex flex-col items-center mb-4" aria-label="图表">
+      <div class="w-48 h-64" id="occupation-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 5 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="公司职员. 6 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">公司职员</td>
+            </tr>
+            <tr role="listitem" aria-label="公务员. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">公务员</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="教职员. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">教职员</td>
+            </tr>
+            <tr role="listitem" aria-label="自营业. 4 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">自营业</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="小学生. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-purple-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">小学生</td>
+            </tr>
+            <tr role="listitem" aria-label="中学生. 4 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-pink-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">中学生</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="高中生. 2 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-indigo-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">高中生</td>
+            </tr>
+            <tr role="listitem" aria-label="大学生. 17 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-cyan-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">大学生</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="兼职工作. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-teal-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">兼职工作</td>
+            </tr>
+            <tr role="listitem" aria-label="另外 2 个. {0} 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-lime-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">另外 2 个</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('occupation-chart', {
+    chart: {
+      type: 'column',
+      height: 248
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      categories: ['公司职员', '公务员', '教职员', '自营业', '小学生', '中学生', '高中生', '大学生', '兼职工作', '另外 2 个'],
+      crosshair: true
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: '回答数'
+      }
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+      pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+        '<td style="padding:0"><b>{point.y} 回答</b></td></tr>',
+      footerFormat: '</table>',
+      shared: true,
+      useHTML: true
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+        borderWidth: 0
+      }
+    },
+    series: [{
+      name: '回答数',
+      data: [6, 0, 0, 4, 1, 4, 2, 17, 1, 0],
+      colorByPoint: true,
+      colors: ['#3b82f6', '#22c55e', '#ef4444', '#eab308', '#8b5cf6', '#ec4899', '#6366f1', '#06b6d4', '#14b8a6', '#84cc16']
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="6.居住地.单行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">6.</span>
+      <span class="text-lg font-medium text-gray-900">居住地</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 46 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt49f0ea05e34c4ac19a805524689764b6"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt49f0ea05e34c4ac19a805524689764b6', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '中国', weight: 3, color: '#182047' },
+        { name: '广东', weight: 3, color: '#2c3c85' },
+        { name: '堺', weight: 3, color: '#3c51b4' },
+        { name: '山东省泰安市', weight: 2, color: '#4760d5' },
+        { name: '武汉', weight: 2, color: '#182047' },
+        { name: '四川', weight: 2, color: '#2c3c85' },
+        { name: '辽宁省抚顺市', weight: 2, color: '#3c51b4' },
+        { name: 'sy', weight: 1, color: '#4760d5' },
+        { name: 'China', weight: 1, color: '#182047' },
+        { name: '重庆', weight: 1, color: '#2c3c85' },
+        { name: '陕西省宝鸡市扶风县法门寺', weight: 1, color: '#3c51b4' },
+        { name: '福建', weight: 1, color: '#4760d5' },
+        { name: '河南省周口市', weight: 1, color: '#182047' },
+        { name: '安徽', weight: 1, color: '#2c3c85' },
+        { name: '浙江', weight: 1, color: '#3c51b4' },
+        { name: '江西省宜春市', weight: 1, color: '#4760d5' },
+        { name: '山西', weight: 1, color: '#182047' },
+        { name: '秘密', weight: 1, color: '#2c3c85' },
+        { name: '马来西亚', weight: 1, color: '#3c51b4' },
+        { name: '江苏', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="8.您是什么时候第一次穿褌的？.单行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">8.</span>
+      <span class="text-lg font-medium text-gray-900">您是什么时候第一次穿褌的？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 18 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudtd8221b01541546199490ee57c442bf9d"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudtd8221b01541546199490ee57c442bf9d', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '17', weight: 3, color: '#3c51b4' },
+        { name: '19', weight: 3, color: '#182047' },
+        { name: '20', weight: 3, color: '#2c3c85' },
+        { name: '8', weight: 2, color: '#182047' },
+        { name: '16', weight: 2, color: '#2c3c85' },
+        { name: '18', weight: 2, color: '#4760d5' },
+        { name: '21', weight: 1, color: '#3c51b4' },
+        { name: '27', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="9.您是什么时候第一次穿足袋的？.单行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">9.</span>
+      <span class="text-lg font-medium text-gray-900">您是什么时候第一次穿足袋的？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 28 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt8c1046307fca4a3aa21a899ba693ce6f"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt8c1046307fca4a3aa21a899ba693ce6f', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '17', weight: 4, color: '#3c51b4' },
+        { name: '15', weight: 3, color: '#182047' },
+        { name: '19', weight: 3, color: '#182047' },
+        { name: '21', weight: 3, color: '#3c51b4' },
+        { name: '14', weight: 2, color: '#4760d5' },
+        { name: '20', weight: 2, color: '#2c3c85' },
+        { name: '7', weight: 1, color: '#182047' },
+        { name: '11', weight: 1, color: '#2c3c85' },
+        { name: '12', weight: 1, color: '#3c51b4' },
+        { name: '16', weight: 1, color: '#2c3c85' },
+        { name: '18', weight: 1, color: '#4760d5' },
+        { name: '22', weight: 1, color: '#4760d5' },
+        { name: '24', weight: 1, color: '#182047' },
+        { name: '25', weight: 1, color: '#2c3c85' },
+        { name: '26', weight: 1, color: '#3c51b4' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="10.是因为参加了什么活动吗？ 如果是的话，可以告诉我们是什么活动吗？.单行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">10.</span>
+      <span class="text-lg font-medium text-gray-900">是因为参加了什么活动吗？ 如果是的话，可以告诉我们是什么活动吗？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 46 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudta7954c91df144c07b4db6985d14d098c"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudta7954c91df144c07b4db6985d14d098c', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '不是', weight: 10, color: '#182047' },
+        { name: '祭典', weight: 3, color: '#2c3c85' },
+        { name: 'cos', weight: 2, color: '#4760d5' },
+        { name: '祭典 就是每个人裸着穿裈和足袋举行祭典活动', weight: 1, color: '#3c51b4' },
+        { name: '玩游戏', weight: 1, color: '#182047' },
+        { name: '目前还没有收到物品', weight: 1, color: '#2c3c85' },
+        { name: 'Cosplay', weight: 1, color: '#3c51b4' },
+        { name: '自己在家玩', weight: 1, color: '#4760d5' },
+        { name: '漫展', weight: 1, color: '#182047' },
+        { name: '没有参加', weight: 1, color: '#2c3c85' },
+        { name: '在网上看到的', weight: 1, color: '#3c51b4' },
+        { name: '动漫', weight: 1, color: '#4760d5' },
+        { name: '看到了想穿', weight: 1, color: '#182047' },
+        { name: '是，草人', weight: 1, color: '#2c3c85' },
+        { name: '没', weight: 1, color: '#3c51b4' },
+        { name: '不是因为参加活动', weight: 1, color: '#4760d5' },
+        { name: '自己喜欢', weight: 1, color: '#182047' },
+        { name: '男同活动', weight: 1, color: '#2c3c85' },
+        { name: 'wu', weight: 1, color: '#3c51b4' },
+        { name: 'vbhgg', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="12.您第一次穿的褌是什么类型的？.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">12.</span>
+      <span class="text-lg font-medium text-gray-900">您第一次穿的<span>褌</span>是什么类型的？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="fundoshi-type-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 12 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="六尺褌（前袋式）. 13 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">六尺褌（前袋式）</td>
+            </tr>
+            <tr role="listitem" aria-label="越中褌. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">越中褌</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="黑猫褌. 2 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">黑猫褌</td>
+            </tr>
+            <tr role="listitem" aria-label="祭典褌. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">祭典褌</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="其他. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">其他</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('fundoshi-type-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '六尺褌（前袋式）', y: 13, color: '#3b82f6' },
+        { name: '越中褌', y: 1, color: '#22c55e' },
+        { name: '黑猫褌', y: 2, color: '#ef4444' },
+        { name: '祭典褌', y: 1, color: '#eab308' },
+        { name: '其他', y: 0, color: '#6b7280' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="13.您第一次穿的足袋是什么类型的？.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">13.</span>
+      <span class="text-lg font-medium text-gray-900">您第一次穿的<span>足袋</span>是什么类型的？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="tabi-type-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 13 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="地下足袋. 2 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">地下足袋</td>
+            </tr>
+            <tr role="listitem" aria-label="纯棉足袋. 16 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">纯棉足袋</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="薄足袋. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">薄足袋</td>
+            </tr>
+            <tr role="listitem" aria-label="足袋袜子. 8 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">足袋袜子</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="其他. 3 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">其他</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('tabi-type-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '地下足袋', y: 2, color: '#3b82f6' },
+        { name: '纯棉足袋', y: 16, color: '#22c55e' },
+        { name: '薄足袋', y: 0, color: '#ef4444' },
+        { name: '足袋袜子', y: 8, color: '#eab308' },
+        { name: '其他', y: 3, color: '#6b7280' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="22.可以跟我们分享一下您第一次穿褌的经历吗？.多行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">22.</span>
+      <span class="text-lg font-medium text-gray-900">可以跟我们分享一下您第一次穿<span>褌</span>的经历吗？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 17 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudtd05afe907f3d48d0afcc7c313c6ff60a"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudtd05afe907f3d48d0afcc7c313c6ff60a', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '其实第一次穿是因为别人送', weight: 1, color: '#182047' },
+        { name: '…我相信大部分人都是会有这种感觉吧', weight: 1, color: '#2c3c85' },
+        { name: '后来慢慢的就习惯了也比较喜欢穿裈来拍照片啊什么的', weight: 1, color: '#3c51b4' },
+        { name: '买来就看着视频直接穿上，然后拍照给朋友看', weight: 1, color: '#4760d5' },
+        { name: '下边会硬吧', weight: 1, color: '#182047' },
+        { name: '感觉不错', weight: 1, color: '#2c3c85' },
+        { name: '很不错', weight: 1, color: '#3c51b4' },
+        { name: '在废弃工地里赤裸身体，只穿褌走来走去', weight: 1, color: '#4760d5' },
+        { name: '从小对这个感兴趣，于是中学时在某宝上第一次和足袋一起买了尝试', weight: 1, color: '#182047' },
+        { name: '害羞', weight: 1, color: '#2c3c85' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="23.可以跟我们分享一下您第一次穿足袋的经历吗？.多行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">23.</span>
+      <span class="text-lg font-medium text-gray-900">可以跟我们分享一下您第一次穿<span>足袋</span>的经历吗？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 29 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt2bcedb31906b4c1e9baf773e329d2f67"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt2bcedb31906b4c1e9baf773e329d2f67', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '1', weight: 1, color: '#182047' },
+        { name: '24', weight: 1, color: '#2c3c85' },
+        { name: 'tb买的 穿了一下', weight: 1, color: '#3c51b4' },
+        { name: 'Cosplay', weight: 1, color: '#4760d5' },
+        { name: '不能', weight: 1, color: '#182047' },
+        { name: '滑滑的', weight: 1, color: '#2c3c85' },
+        { name: '没啥特别', weight: 1, color: '#3c51b4' },
+        { name: '不行', weight: 1, color: '#4760d5' },
+        { name: '觉得很性感', weight: 1, color: '#182047' },
+        { name: '就直接买了穿', weight: 1, color: '#2c3c85' },
+        { name: '穿足袋和木屐在山上散步', weight: 1, color: '#3c51b4' },
+        { name: '很酷，很帅气', weight: 1, color: '#4760d5' },
+        { name: '可以，这里写不下了', weight: 1, color: '#182047' },
+        { name: '不错', weight: 1, color: '#2c3c85' },
+        { name: '就很简单，往脚上一套，再把扣子扣上就行了', weight: 1, color: '#3c51b4' },
+        { name: 'wrw', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="24.请问您是如何学会褌的系法的？.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">24.</span>
+      <span class="text-lg font-medium text-gray-900">请问您是如何学会<span>褌</span>的系法的？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="fundoshi-learning-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 24 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="通过朋友. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">通过朋友</td>
+            </tr>
+            <tr role="listitem" aria-label="自己系. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">自己系</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="看教程. 16 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">看教程</td>
+            </tr>
+            <tr role="listitem" aria-label="其他. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">其他</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('fundoshi-learning-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '通过朋友', y: 0, color: '#3b82f6' },
+        { name: '自己系', y: 1, color: '#22c55e' },
+        { name: '看教程', y: 16, color: '#ef4444' },
+        { name: '其他', y: 0, color: '#eab308' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="25.请问您是如何学会足袋的穿法的？.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">25.</span>
+      <span class="text-lg font-medium text-gray-900">请问您是如何学会<span>足袋</span>的穿法的？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="tabi-learning-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 25 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="通过朋友. 2 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">通过朋友</td>
+            </tr>
+            <tr role="listitem" aria-label="自己穿. 19 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">自己穿</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="看教程. 8 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">看教程</td>
+            </tr>
+            <tr role="listitem" aria-label="其他. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">其他</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('tabi-learning-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '通过朋友', y: 2, color: '#3b82f6' },
+        { name: '自己穿', y: 19, color: '#22c55e' },
+        { name: '看教程', y: 8, color: '#ef4444' },
+        { name: '其他', y: 0, color: '#eab308' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="26.您是什么时候开始对褌产生兴趣的？.单行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">26.</span>
+      <span class="text-lg font-medium text-gray-900">您是什么时候开始对<span>褌</span>产生兴趣的？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 17 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudtb2416dfc63cc4af7ba5704ef7039515a"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudtb2416dfc63cc4af7ba5704ef7039515a', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '16', weight: 3, color: '#4760d5' },
+        { name: '20', weight: 3, color: '#3c51b4' },
+        { name: '12', weight: 2, color: '#2c3c85' },
+        { name: '14', weight: 2, color: '#3c51b4' },
+        { name: '18', weight: 2, color: '#182047' },
+        { name: '19', weight: 2, color: '#2c3c85' },
+        { name: '8', weight: 1, color: '#182047' },
+        { name: '27', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="27.您是什么时候开始对足袋产生兴趣的？.单行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">27.</span>
+      <span class="text-lg font-medium text-gray-900">您是什么时候开始对<span>足袋</span>产生兴趣的？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 29 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudta2b3f77ae9574c6f9f6d3723525c7ceb"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudta2b3f77ae9574c6f9f6d3723525c7ceb', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '7', weight: 4, color: '#182047' },
+        { name: '10', weight: 4, color: '#2c3c85' },
+        { name: '15', weight: 4, color: '#182047' },
+        { name: '16', weight: 4, color: '#2c3c85' },
+        { name: '14', weight: 3, color: '#4760d5' },
+        { name: '12', weight: 2, color: '#3c51b4' },
+        { name: '22', weight: 2, color: '#182047' },
+        { name: '25', weight: 2, color: '#2c3c85' },
+        { name: '17', weight: 1, color: '#3c51b4' },
+        { name: '20', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="28.是什么原因让您对褌产生了兴趣呢？.多行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">28.</span>
+      <span class="text-lg font-medium text-gray-900">是什么原因让您对<span>褌</span>产生了兴趣呢？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 17 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt78cfb547e3514020809ddce1d1772245"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt78cfb547e3514020809ddce1d1772245', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '2', weight: 1, color: '#182047' },
+        { name: '外观很好看，可以凸造型', weight: 1, color: '#2c3c85' },
+        { name: '日本袜子', weight: 1, color: '#3c51b4' },
+        { name: '喜欢日本文化', weight: 1, color: '#4760d5' },
+        { name: '不知道', weight: 1, color: '#182047' },
+        { name: '网络上的擦边视频还有GV', weight: 1, color: '#2c3c85' },
+        { name: '很色', weight: 1, color: '#3c51b4' },
+        { name: '太喜欢了', weight: 1, color: '#4760d5' },
+        { name: '动画和影视剧', weight: 1, color: '#182047' },
+        { name: '很性感', weight: 1, color: '#2c3c85' },
+        { name: '怪感', weight: 1, color: '#3c51b4' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="29.是什么原因让您对足袋产生了兴趣呢？.多行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">29.</span>
+      <span class="text-lg font-medium text-gray-900">是什么原因让您对<span>足袋</span>产生了兴趣呢？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 29 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt28f3b4cb85504b4fb5ce890640c1dfda"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt28f3b4cb85504b4fb5ce890640c1dfda', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '动漫', weight: 2, color: '#182047' },
+        { name: 'xp', weight: 2, color: '#2c3c85' },
+        { name: '忘记了', weight: 1, color: '#3c51b4' },
+        { name: 'Cosplay', weight: 1, color: '#4760d5' },
+        { name: '影视', weight: 1, color: '#182047' },
+        { name: '白色的足袋感觉很色情', weight: 1, color: '#2c3c85' },
+        { name: '因为一部关于日本艺伎的纪录片而引发的兴趣', weight: 1, color: '#3c51b4' },
+        { name: '对痛苦的恐惧导致的倒错行为', weight: 1, color: '#4760d5' },
+        { name: '别致的造型', weight: 1, color: '#182047' },
+        { name: '和服', weight: 1, color: '#2c3c85' },
+        { name: '女性穿足袋很好看', weight: 1, color: '#3c51b4' },
+        { name: '性感', weight: 1, color: '#4760d5' },
+        { name: '看电视', weight: 1, color: '#182047' },
+        { name: '分趾设计', weight: 1, color: '#2c3c85' },
+        { name: '背后之国', weight: 1, color: '#3c51b4' },
+        { name: '喜欢各种袜子和鞋子', weight: 1, color: '#4760d5' },
+        { name: '想草人', weight: 1, color: '#182047' },
+        { name: '武士文化和忍者文化', weight: 1, color: '#2c3c85' },
+        { name: '动画和影视剧', weight: 1, color: '#3c51b4' },
+        { name: '帅哥的脚', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="30.您现在还会穿褌吗？.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">30.</span>
+      <span class="text-lg font-medium text-gray-900">您现在还会穿<span>褌</span>吗？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="fundoshi-wearing-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 30 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="经常穿. 6 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">经常穿</td>
+            </tr>
+            <tr role="listitem" aria-label="偶尔穿. 8 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">偶尔穿</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="不怎么穿. 3 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">不怎么穿</td>
+            </tr>
+            <tr role="listitem" aria-label="完全不穿. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">完全不穿</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('fundoshi-wearing-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '经常穿', y: 6, color: '#3b82f6' },
+        { name: '偶尔穿', y: 8, color: '#22c55e' },
+        { name: '不怎么穿', y: 3, color: '#ef4444' },
+        { name: '完全不穿', y: 0, color: '#eab308' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="31.您现在还会穿足袋吗？.单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">31.</span>
+      <span class="text-lg font-medium text-gray-900">您现在还会穿<span>足袋</span>吗？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="tabi-wearing-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 31 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="经常穿. 15 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">经常穿</td>
+            </tr>
+            <tr role="listitem" aria-label="偶尔穿. 14 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">偶尔穿</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="不怎么穿. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">不怎么穿</td>
+            </tr>
+            <tr role="listitem" aria-label="完全不穿. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">完全不穿</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('tabi-wearing-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '经常穿', y: 15, color: '#3b82f6' },
+        { name: '偶尔穿', y: 14, color: '#22c55e' },
+        { name: '不怎么穿', y: 0, color: '#ef4444' },
+        { name: '完全不穿', y: 0, color: '#eab308' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="32.您通常会在什么情况下穿褌？.多行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">32.</span>
+      <span class="text-lg font-medium text-gray-900">您通常会在什么情况下穿<span>褌</span>？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 16 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt20d08ca5b6114b729f60c084692f5d19"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt20d08ca5b6114b729f60c084692f5d19', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '想穿的时候', weight: 2, color: '#2c3c85' },
+        { name: '配合马乘袴0回と数えきれないくらいです', weight: 1, color: '#182047' },
+        { name: '拍照或者睡觉', weight: 1, color: '#3c51b4' },
+        { name: '晚上睡觉', weight: 1, color: '#4760d5' },
+        { name: '手冲', weight: 1, color: '#182047' },
+        { name: '当内裤穿', weight: 1, color: '#2c3c85' },
+        { name: '有时候连上班也会穿', weight: 1, color: '#3c51b4' },
+        { name: '做爱的时候', weight: 1, color: '#4760d5' },
+        { name: '天', weight: 1, color: '#182047' },
+        { name: '想起来的时候', weight: 1, color: '#2c3c85' },
+        { name: '自位', weight: 1, color: '#3c51b4' },
+        { name: '家里', weight: 1, color: '#4760d5' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="33.您通常会在什么情况下穿足袋？.多行文本">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">33.</span>
+      <span class="text-lg font-medium text-gray-900">您通常会在什么情况下穿<span>足袋</span>？</span>
+    </div>
+    <div class="mb-4">
+      <span class="text-gray-700">已提交 29 条答复</span>
+    </div>
+    <div class="w-full h-48" id="insight-word-cloudt00bf17256bc34fc29a4bc2c661431e2b"></div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('insight-word-cloudt00bf17256bc34fc29a4bc2c661431e2b', {
+    series: [{
+      type: 'wordcloud',
+      data: [
+        { name: '24', weight: 1, color: '#182047' },
+        { name: '祭典', weight: 1, color: '#2c3c85' },
+        { name: '居合道', weight: 1, color: '#3c51b4' },
+        { name: '正式场合', weight: 1, color: '#4760d5' },
+        { name: 'cos', weight: 1, color: '#182047' },
+        { name: 'Cosplay', weight: 1, color: '#2c3c85' },
+        { name: '摆拍', weight: 1, color: '#3c51b4' },
+        { name: '睡觉，上床', weight: 1, color: '#4760d5' },
+        { name: '漫展', weight: 1, color: '#182047' },
+        { name: '独自在家或者和男朋友涩的时候', weight: 1, color: '#2c3c85' },
+        { name: '闲来无事时', weight: 1, color: '#3c51b4' },
+        { name: '在家偷偷穿', weight: 1, color: '#4760d5' },
+        { name: '日常', weight: 1, color: '#182047' },
+        { name: '任何时候', weight: 1, color: '#2c3c85' },
+        { name: '想草人的时候', weight: 1, color: '#3c51b4' },
+        { name: '独处', weight: 1, color: '#4760d5' },
+        { name: '日常生活、家居、睡觉都会穿', weight: 1, color: '#182047' },
+        { name: '睡觉或者在家', weight: 1, color: '#2c3c85' },
+        { name: 'wewe', weight: 1, color: '#3c51b4' }
+      ]
+    }],
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false
+    },
+    legend: {
+      enabled: false
+    },
+    tooltip: {
+      formatter: function () {
+        return this.point.name + ' 的计数是 ' + this.point.weight + '. ' + this.point.weight + ' 回复者 (' + Math.round(this.point.weight / this.series.options.data.reduce((sum, item) => sum + item.weight, 0) * 100) + '%)。';
+      }
+    }
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="34.您的家人或伴侣知道您穿褌吗？ .单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">34.</span>
+      <span class="text-lg font-medium text-gray-900">您的家人或伴侣知道您穿<span>褌</span>吗？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="fundoshi-awareness-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 34 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="知道. 3 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">知道</td>
+            </tr>
+            <tr role="listitem" aria-label="不知道. 10 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">不知道</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="不清楚. 4 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">不清楚</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('fundoshi-awareness-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '知道', y: 3, color: '#3b82f6' },
+        { name: '不知道', y: 10, color: '#22c55e' },
+        { name: '不清楚', y: 4, color: '#ef4444' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="35.您的家人或伴侣知道您穿足袋吗？ .单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">35.</span>
+      <span class="text-lg font-medium text-gray-900">您的家人或伴侣知道您穿<span>足袋</span>吗？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="tabi-awareness-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 35 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="知道. 7 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">知道</td>
+            </tr>
+            <tr role="listitem" aria-label="不知道. 16 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">不知道</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="不清楚. 6 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">不清楚</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('tabi-awareness-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '知道', y: 7, color: '#3b82f6' },
+        { name: '不知道', y: 16, color: '#22c55e' },
+        { name: '不清楚', y: 6, color: '#ef4444' }
+      ]
+    }]
+  });
+</script>
+
+<div class="p-4" data-automation-id="InsightQuestionView">
+  <div class="bg-white rounded-md shadow p-6" data-automation-id="questionAnalyzeCard" aria-label="36.请问穿过六尺ふんどし（前袋型）、祭典褌的朋友：您通常如何放置阴茎？ .单项选择">
+    <div class="flex items-center mb-4" role="heading" aria-level="2">
+      <span class="text-lg font-medium text-gray-900 mr-2">36.</span>
+      <span class="text-lg font-medium text-gray-900">请问穿过六尺ふんどし（前袋型）、祭典<span>褌</span>的朋友：您通常如何放置阴茎？</span>
+    </div>
+    <div class="flex flex-col items-center" aria-label="图表">
+      <div class="w-48 h-48" id="penis-placement-chart"></div>
+      <div class="mt-2 text-sm text-gray-500" aria-label="图表控件图例表格">
+        <table class="w-full border-collapse" aria-label="问题 36 图表控件图例表格">
+          <tbody role="list">
+            <tr class="bg-gray-100" role="listitem" aria-label="向上. 4 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">向上</td>
+            </tr>
+            <tr role="listitem" aria-label="向下. 11 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">向下</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="横向. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">横向</td>
+            </tr>
+            <tr role="listitem" aria-label="我是女生. 0 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">我是女生</td>
+            </tr>
+            <tr class="bg-gray-100" role="listitem" aria-label="其他. 1 个回答">
+              <td class="w-4 px-4 py-2">
+                <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+              </td>
+              <td class="px-4 py-2 text-gray-900">其他</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Highcharts.chart('penis-placement-chart', {
+    chart: {
+      type: 'pie',
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      height: 230
+    },
+    title: {
+      text: ''
+    },
+    credits: {
+      enabled: false
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: '比例',
+      colorByPoint: true,
+      data: [
+        { name: '向上', y: 4, color: '#3b82f6' },
+        { name: '向下', y: 11, color: '#22c55e' },
+        { name: '横向', y: 1, color: '#ef4444' },
+        { name: '我是女生', y: 0, color: '#eab308' },
+        { name: '其他', y: 1, color: '#6b7280' }
+      ]
+    }]
+  });
+</script>

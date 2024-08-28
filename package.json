@@ -30,6 +30,8 @@
     "astro-feelback": "^0.3.4",
     "astro-icon": "^1.1.0",
     "framer-motion": "^11.3.17",
+    "highcharts": "^11.4.7",
+    "highcharts-react-official": "^3.2.1",
     "primereact": "^10.8.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -43,6 +45,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.14",
+    "@types/highcharts": "^7.0.0",
     "@waline/client": "^3.3.0",
     "astro-vtbot": "^1.8.3",
     "vite-plugin-commonjs": "^0.10.1"
