@@ -40,15 +40,6 @@ const ImageGallery = () => {
             </CardHeader>
             <CardBody>
               <Tabs variant="solid" fullWidth size="md">
-                <Tab title="照片分析与改进建议">
-                  <div>
-                    <p>构图: {item.analysis.composition}</p>
-                    <p>色彩: {item.analysis.color}</p>
-                    <p>光影: {item.analysis.lightShadow}</p>
-                    <p>元素: {item.analysis.elements}</p>
-                    <p>景深: {item.analysis.depthOfField}</p>
-                  </div>
-                </Tab>
                 <Tab title="Midjourney提示词">
                   <div className="whitespace-pre-wrap break-words">
                     <Snippet size="sm" radius="md" hideSymbol={true}>
